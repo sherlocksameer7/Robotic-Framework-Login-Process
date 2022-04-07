@@ -22,5 +22,8 @@ google test
      [Documentation]  Google Search Test
      [Tags]  Internet
      Open Browser   https://www.google.co.in/   chrome
+     Maximize Browser Window
+     Input Text     name:q  Amazon.in
+     Submit Form
      Close Browser
 *** Keywords ***

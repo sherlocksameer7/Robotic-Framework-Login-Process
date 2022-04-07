@@ -1,56 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220407 10:09:34.166" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220407 10:29:15.670" rpa="false" schemaversion="3">
 <suite id="s1" name="Login" source="C:\Users\sherl\PycharmProjects\Robot Framework Project Login\Tests\Facebook\FunctionalTestSuite\login.robot">
 <test id="s1-t1" name="log screen test" line="6">
 <kw name="Log" library="BuiltIn">
 <arg>Hello</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 10:09:34.411" level="INFO">Hello</msg>
-<status status="PASS" starttime="20220407 10:09:34.411" endtime="20220407 10:09:34.411"/>
+<msg timestamp="20220407 10:29:15.924" level="INFO">Hello</msg>
+<status status="PASS" starttime="20220407 10:29:15.924" endtime="20220407 10:29:15.924"/>
 </kw>
 <doc>This is a Login Screen for all Users</doc>
 <tag>User</tag>
-<status status="PASS" starttime="20220407 10:09:34.410" endtime="20220407 10:09:34.411"/>
+<status status="PASS" starttime="20220407 10:29:15.923" endtime="20220407 10:29:15.925"/>
 </test>
 <test id="s1-t2" name="registration screen test" line="11">
 <kw name="Log" library="BuiltIn">
 <arg>Success</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 10:09:34.413" level="INFO">Success</msg>
-<status status="PASS" starttime="20220407 10:09:34.413" endtime="20220407 10:09:34.413"/>
+<msg timestamp="20220407 10:29:15.926" level="INFO">Success</msg>
+<status status="PASS" starttime="20220407 10:29:15.926" endtime="20220407 10:29:15.926"/>
 </kw>
 <doc>This is the Registration Screen for New Users</doc>
 <tag>User</tag>
-<status status="PASS" starttime="20220407 10:09:34.412" endtime="20220407 10:09:34.414"/>
+<status status="PASS" starttime="20220407 10:29:15.926" endtime="20220407 10:29:15.927"/>
 </test>
 <test id="s1-t3" name="admin login test" line="16">
 <kw name="Log" library="BuiltIn">
 <arg>Admin</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 10:09:34.415" level="INFO">Admin</msg>
-<status status="PASS" starttime="20220407 10:09:34.415" endtime="20220407 10:09:34.415"/>
+<msg timestamp="20220407 10:29:15.928" level="INFO">Admin</msg>
+<status status="PASS" starttime="20220407 10:29:15.928" endtime="20220407 10:29:15.928"/>
 </kw>
 <doc>This is Admin Screen</doc>
 <tag>Admin</tag>
-<status status="PASS" starttime="20220407 10:09:34.414" endtime="20220407 10:09:34.415"/>
+<status status="PASS" starttime="20220407 10:29:15.928" endtime="20220407 10:29:15.928"/>
 </test>
 <test id="s1-t4" name="google test" line="21">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.google.co.in/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220407 10:09:34.416" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
-<status status="PASS" starttime="20220407 10:09:34.416" endtime="20220407 10:09:36.992"/>
+<msg timestamp="20220407 10:29:15.930" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20220407 10:29:15.930" endtime="20220407 10:29:19.313"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220407 10:29:19.313" endtime="20220407 10:29:19.440"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>Amazon.in</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 10:29:19.441" level="INFO">Typing text 'Amazon.in' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 10:29:19.441" endtime="20220407 10:29:19.541"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220407 10:29:19.542" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220407 10:29:19.542" endtime="20220407 10:29:22.491"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220407 10:09:36.993" endtime="20220407 10:09:39.191"/>
+<status status="PASS" starttime="20220407 10:29:22.492" endtime="20220407 10:29:24.651"/>
 </kw>
 <doc>Google Search Test</doc>
 <tag>Internet</tag>
-<status status="PASS" starttime="20220407 10:09:34.416" endtime="20220407 10:09:39.192"/>
+<status status="PASS" starttime="20220407 10:29:15.929" endtime="20220407 10:29:24.652"/>
 </test>
-<status status="PASS" starttime="20220407 10:09:34.168" endtime="20220407 10:09:39.193"/>
+<status status="PASS" starttime="20220407 10:29:15.672" endtime="20220407 10:29:24.653"/>
 </suite>
 <statistics>
 <total>
