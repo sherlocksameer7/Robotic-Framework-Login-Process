@@ -26,9 +26,12 @@ google test
      [Tags]  Internet
      Open Browser    ${web_url}  chrome
      Maximize Browser Window
-     Input Text     name:q  ${search_p}
+#     Input Text     name:q  ${search_p}
+     Enter Search Data
      Submit Form
      sleep  5s
      Close Browser
 
 *** Keywords ***
+Enter Search Data
+     Input Text     name:q  ${search_p}

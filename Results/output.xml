@@ -1,78 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220407 10:45:47.920" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220407 11:00:57.573" rpa="false" schemaversion="3">
 <suite id="s1" name="Login" source="C:\Users\sherl\PycharmProjects\Robot Framework Project Login\Tests\Facebook\FunctionalTestSuite\login.robot">
-<test id="s1-t1" name="log screen test" line="7">
+<test id="s1-t1" name="log screen test" line="9">
 <kw name="Log" library="BuiltIn">
 <arg>Hello</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 10:45:48.167" level="INFO">Hello</msg>
-<status status="PASS" starttime="20220407 10:45:48.167" endtime="20220407 10:45:48.167"/>
+<msg timestamp="20220407 11:00:57.755" level="INFO">Hello</msg>
+<status status="PASS" starttime="20220407 11:00:57.755" endtime="20220407 11:00:57.755"/>
 </kw>
 <doc>This is a Login Screen for all Users</doc>
 <tag>User</tag>
-<status status="PASS" starttime="20220407 10:45:48.166" endtime="20220407 10:45:48.167"/>
+<status status="PASS" starttime="20220407 11:00:57.754" endtime="20220407 11:00:57.756"/>
 </test>
-<test id="s1-t2" name="registration screen test" line="12">
+<test id="s1-t2" name="registration screen test" line="14">
 <kw name="Log" library="BuiltIn">
 <arg>Success</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 10:45:48.169" level="INFO">Success</msg>
-<status status="PASS" starttime="20220407 10:45:48.169" endtime="20220407 10:45:48.169"/>
+<msg timestamp="20220407 11:00:57.758" level="INFO">Success</msg>
+<status status="PASS" starttime="20220407 11:00:57.758" endtime="20220407 11:00:57.758"/>
 </kw>
 <doc>This is the Registration Screen for New Users</doc>
 <tag>User</tag>
-<status status="PASS" starttime="20220407 10:45:48.168" endtime="20220407 10:45:48.170"/>
+<status status="PASS" starttime="20220407 11:00:57.757" endtime="20220407 11:00:57.759"/>
 </test>
-<test id="s1-t3" name="admin login test" line="17">
+<test id="s1-t3" name="admin login test" line="19">
 <kw name="Log" library="BuiltIn">
 <arg>Admin</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 10:45:48.172" level="INFO">Admin</msg>
-<status status="PASS" starttime="20220407 10:45:48.171" endtime="20220407 10:45:48.172"/>
+<msg timestamp="20220407 11:00:57.761" level="INFO">Admin</msg>
+<status status="PASS" starttime="20220407 11:00:57.761" endtime="20220407 11:00:57.761"/>
 </kw>
 <doc>This is Admin Screen</doc>
 <tag>Admin</tag>
-<status status="PASS" starttime="20220407 10:45:48.171" endtime="20220407 10:45:48.172"/>
+<status status="PASS" starttime="20220407 11:00:57.760" endtime="20220407 11:00:57.761"/>
 </test>
-<test id="s1-t4" name="google test" line="22">
+<test id="s1-t4" name="google test" line="24">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${web_url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220407 10:45:48.174" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
-<status status="PASS" starttime="20220407 10:45:48.174" endtime="20220407 10:45:50.770"/>
+<msg timestamp="20220407 11:00:57.762" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20220407 11:00:57.762" endtime="20220407 11:01:00.073"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220407 10:45:50.770" endtime="20220407 10:45:50.912"/>
+<status status="PASS" starttime="20220407 11:01:00.074" endtime="20220407 11:01:00.202"/>
 </kw>
+<kw name="Enter Search Data">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:q</arg>
 <arg>${search_p}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 10:45:50.913" level="INFO">Typing text 'Amazon.in' into text field 'name:q'.</msg>
-<status status="PASS" starttime="20220407 10:45:50.913" endtime="20220407 10:45:51.021"/>
+<msg timestamp="20220407 11:01:00.203" level="INFO">Typing text 'Amazon.in' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 11:01:00.203" endtime="20220407 11:01:00.290"/>
+</kw>
+<status status="PASS" starttime="20220407 11:01:00.202" endtime="20220407 11:01:00.291"/>
 </kw>
 <kw name="Submit Form" library="SeleniumLibrary">
 <doc>Submits a form identified by ``locator``.</doc>
-<msg timestamp="20220407 10:45:51.022" level="INFO">Submitting form 'None'.</msg>
-<status status="PASS" starttime="20220407 10:45:51.022" endtime="20220407 10:45:52.915"/>
+<msg timestamp="20220407 11:01:00.292" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220407 11:01:00.291" endtime="20220407 11:01:01.770"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220407 10:45:57.919" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220407 10:45:52.916" endtime="20220407 10:45:57.919"/>
+<msg timestamp="20220407 11:01:06.782" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220407 11:01:01.770" endtime="20220407 11:01:06.782"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220407 10:45:57.919" endtime="20220407 10:46:00.089"/>
+<status status="PASS" starttime="20220407 11:01:06.782" endtime="20220407 11:01:09.418"/>
 </kw>
 <doc>Google Search Test</doc>
 <tag>Internet</tag>
-<status status="PASS" starttime="20220407 10:45:48.173" endtime="20220407 10:46:00.090"/>
+<status status="PASS" starttime="20220407 11:00:57.762" endtime="20220407 11:01:09.420"/>
 </test>
-<status status="PASS" starttime="20220407 10:45:47.922" endtime="20220407 10:46:00.091"/>
+<status status="PASS" starttime="20220407 11:00:57.574" endtime="20220407 11:01:09.425"/>
 </suite>
 <statistics>
 <total>
