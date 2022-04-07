@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220407 12:10:32.457" rpa="false" schemaversion="3">
+<suite id="s1" name="App" source="C:\Users\sherl\PycharmProjects\Robot Framework Project Login\Tests\Flipkart\FunctionalTestSuite\App.robot">
+<test id="s1-t1" name="Google Search Test" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${google_search}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 12:10:32.673" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20220407 12:10:32.673" endtime="20220407 12:10:35.303"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220407 12:10:35.304" endtime="20220407 12:10:35.430"/>
+</kw>
+<kw name="Search Data">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${flip_search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 12:10:35.431" level="INFO">Typing text 'flipkart' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 12:10:35.431" endtime="20220407 12:10:35.533"/>
+</kw>
+<status status="PASS" starttime="20220407 12:10:35.431" endtime="20220407 12:10:35.534"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220407 12:10:35.534" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220407 12:10:35.534" endtime="20220407 12:10:37.869"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:LC20lb</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 12:10:37.871" level="INFO">Clicking element 'class:LC20lb'.</msg>
+<status status="PASS" starttime="20220407 12:10:37.870" endtime="20220407 12:10:39.465"/>
+</kw>
+<doc>This Test is to Open Google</doc>
+<tag>Google</tag>
+<status status="PASS" starttime="20220407 12:10:32.672" endtime="20220407 12:10:39.466"/>
+</test>
+<test id="s1-t2" name="Flipkart Test" line="17">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 12:10:42.469" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 12:10:39.467" endtime="20220407 12:10:42.469"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:_2KpZ6l</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 12:10:42.470" level="INFO">Clicking button 'class:_2KpZ6l'.</msg>
+<status status="PASS" starttime="20220407 12:10:42.469" endtime="20220407 12:10:42.582"/>
+</kw>
+<kw name="Flip Data Search">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${product_search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 12:10:42.584" level="INFO">Typing text 'iphone 13' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 12:10:42.583" endtime="20220407 12:10:42.770"/>
+</kw>
+<status status="PASS" starttime="20220407 12:10:42.583" endtime="20220407 12:10:42.771"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 12:10:49.784" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20220407 12:10:42.771" endtime="20220407 12:10:49.785"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:L0Z3Pu</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 12:10:49.787" level="INFO">Clicking button 'class:L0Z3Pu'.</msg>
+<status status="PASS" starttime="20220407 12:10:49.786" endtime="20220407 12:10:49.881"/>
+</kw>
+<doc>This is to test the Flipkart Search</doc>
+<tag>Shopping App</tag>
+<status status="PASS" starttime="20220407 12:10:39.467" endtime="20220407 12:10:49.881"/>
+</test>
+<status status="PASS" starttime="20220407 12:10:32.458" endtime="20220407 12:10:49.882"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Google</stat>
+<stat pass="1" fail="0" skip="0">Shopping App</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="App">App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
