@@ -17,4 +17,10 @@ admin login test
      [Documentation]  This is Admin Screen
      [Tags]  Admin
      log  Admin
+
+google test
+     [Documentation]  Google Search Test
+     [Tags]  Internet
+     Open Browser   https://www.google.co.in/   chrome
+     Close Browser
 *** Keywords ***

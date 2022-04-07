@@ -1,51 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220407 09:58:22.993" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220407 10:09:34.166" rpa="false" schemaversion="3">
 <suite id="s1" name="Login" source="C:\Users\sherl\PycharmProjects\Robot Framework Project Login\Tests\Facebook\FunctionalTestSuite\login.robot">
 <test id="s1-t1" name="log screen test" line="6">
 <kw name="Log" library="BuiltIn">
 <arg>Hello</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 09:58:23.242" level="INFO">Hello</msg>
-<status status="PASS" starttime="20220407 09:58:23.242" endtime="20220407 09:58:23.242"/>
+<msg timestamp="20220407 10:09:34.411" level="INFO">Hello</msg>
+<status status="PASS" starttime="20220407 10:09:34.411" endtime="20220407 10:09:34.411"/>
 </kw>
 <doc>This is a Login Screen for all Users</doc>
 <tag>User</tag>
-<status status="PASS" starttime="20220407 09:58:23.241" endtime="20220407 09:58:23.243"/>
+<status status="PASS" starttime="20220407 10:09:34.410" endtime="20220407 10:09:34.411"/>
 </test>
 <test id="s1-t2" name="registration screen test" line="11">
 <kw name="Log" library="BuiltIn">
 <arg>Success</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 09:58:23.245" level="INFO">Success</msg>
-<status status="PASS" starttime="20220407 09:58:23.244" endtime="20220407 09:58:23.245"/>
+<msg timestamp="20220407 10:09:34.413" level="INFO">Success</msg>
+<status status="PASS" starttime="20220407 10:09:34.413" endtime="20220407 10:09:34.413"/>
 </kw>
 <doc>This is the Registration Screen for New Users</doc>
 <tag>User</tag>
-<status status="PASS" starttime="20220407 09:58:23.244" endtime="20220407 09:58:23.245"/>
+<status status="PASS" starttime="20220407 10:09:34.412" endtime="20220407 10:09:34.414"/>
 </test>
 <test id="s1-t3" name="admin login test" line="16">
 <kw name="Log" library="BuiltIn">
 <arg>Admin</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220407 09:58:23.247" level="INFO">Admin</msg>
-<status status="PASS" starttime="20220407 09:58:23.247" endtime="20220407 09:58:23.247"/>
+<msg timestamp="20220407 10:09:34.415" level="INFO">Admin</msg>
+<status status="PASS" starttime="20220407 10:09:34.415" endtime="20220407 10:09:34.415"/>
 </kw>
 <doc>This is Admin Screen</doc>
 <tag>Admin</tag>
-<status status="PASS" starttime="20220407 09:58:23.246" endtime="20220407 09:58:23.247"/>
+<status status="PASS" starttime="20220407 10:09:34.414" endtime="20220407 10:09:34.415"/>
 </test>
-<status status="PASS" starttime="20220407 09:58:22.996" endtime="20220407 09:58:23.248"/>
+<test id="s1-t4" name="google test" line="21">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.co.in/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 10:09:34.416" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20220407 10:09:34.416" endtime="20220407 10:09:36.992"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220407 10:09:36.993" endtime="20220407 10:09:39.191"/>
+</kw>
+<doc>Google Search Test</doc>
+<tag>Internet</tag>
+<status status="PASS" starttime="20220407 10:09:34.416" endtime="20220407 10:09:39.192"/>
+</test>
+<status status="PASS" starttime="20220407 10:09:34.168" endtime="20220407 10:09:39.193"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">Admin</stat>
+<stat pass="1" fail="0" skip="0">Internet</stat>
 <stat pass="2" fail="0" skip="0">User</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
