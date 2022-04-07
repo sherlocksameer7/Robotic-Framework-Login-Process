@@ -1,6 +1,9 @@
 *** Settings ***
 Library  SeleniumLibrary
+
 *** Variables ***
+${web_url}  https://www.google.co.in/
+${search_p}  Amazon.in
 
 *** Test Cases ***
 log screen test
@@ -21,6 +24,11 @@ admin login test
 google test
      [Documentation]  Google Search Test
      [Tags]  Internet
-     Open Browser   https://www.google.co.in/   chrome
+     Open Browser    ${web_url}  chrome
+     Maximize Browser Window
+     Input Text     name:q  ${search_p}
+     Submit Form
+     sleep  5s
      Close Browser
+
 *** Keywords ***
